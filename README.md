@@ -1,2 +1,3 @@
-# raspimouse_book_errata
-正誤表等の管理
+# raspimouse_book_info
+
+書籍の情報
