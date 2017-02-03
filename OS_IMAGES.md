@@ -32,9 +32,14 @@ ubuntu@ubuntu:~$ sudo apt upgrade
 ```
 書き換えた設定が残っているか確認します。
 ```
-$ uname -r
+ubuntu@ubuntu:~$ uname -r
 4.4.0-1009-raspi2
 ubuntu@ubuntu:~$ grep -A 1 device_tree_address /boot/firmware/config.txt 
 device_tree_address=0x02008000
 ```
 これで再起動すると
+```
+ubuntu@ubuntu:~$ uname -r
+4.4.0-1042-raspi2
+```
+というようにカーネルがアップデートされます。
