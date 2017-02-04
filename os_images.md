@@ -1,17 +1,19 @@
-# ROSインストール済みOSイメージ
+# OSイメージに関する情報
+
+## ROSインストール済みOSイメージ
 
 https://lab.ueda.asia/?page_id=2885
 
-# Pi3 + Ubuntu 16.04 Serverでアップグレードしてもクラッシュしない方法
+## Pi3 + Ubuntu 16.04 Serverでアップグレードしてもクラッシュしない方法
 
 2017年1月現在、https://wiki.ubuntu.com/ARM/RaspberryPi で配布されているPi3用のイメージをapt upgradeするとクラッシュする現象が起きています。
 これは次の方法で回避できます。
 
-# 情報元
+### 情報元
 
 https://bugs.launchpad.net/ubuntu/+source/linux-raspi2/+bug/1652270/comments/31
 
-# 方法
+### 方法
 
 /boot/firmware/config.txt から、次の記述を見つけます。
 ```
