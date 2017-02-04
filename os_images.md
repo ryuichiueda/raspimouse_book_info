@@ -2,7 +2,8 @@
 
 ## ROSインストール済みOSイメージ
 
-https://lab.ueda.asia/?page_id=2885
+* バグ除去済みのRaspberry Pi 3用 Ubuntu 16.04 Server: https://lab.ueda.asia/misc/ubuntu-16.04-preinstalled-server-armhf+raspi3-upgradable.img.xz
+* その他の情報: https://lab.ueda.asia/?page_id=2885
 
 ## Pi3 + Ubuntu 16.04 Serverでアップグレードしてもクラッシュしない方法
 
