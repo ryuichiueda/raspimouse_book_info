@@ -56,4 +56,4 @@ ubuntu@ubuntu:~$ uname -r
 ラズパイで使いやすいようにしたものがこちらにあります。
 
 https://tiryoh.com/blog/archives/1101
-というようにカーネルがアップデートされます。
+
