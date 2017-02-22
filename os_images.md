@@ -49,3 +49,11 @@ ubuntu@ubuntu:~$ uname -r
 4.4.0-1042-raspi2
 ```
 というようにカーネルがアップデートされます。
+
+
+## Ubuntu MATEのOSイメージ
+
+ラズパイで使いやすいようにしたものがこちらにあります。
+
+https://tiryoh.com/blog/archives/1101
+というようにカーネルがアップデートされます。
