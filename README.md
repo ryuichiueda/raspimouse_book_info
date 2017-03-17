@@ -6,9 +6,10 @@
 
 ## 各章のコード
 
-* 4章: 
-  * cronを使うもの: https://github.com/ryuichiueda/pimouse_setup/tree/cad60aa542ac45c4e685dc81804a9f2aa90b897d
-  * makeを使うもの: https://github.com/ryuichiueda/pimouse_setup
+* 4章:
+    * [cronを使うもの](https://github.com/ryuichiueda/pimouse_setup/tree/cad60aa542ac45c4e685dc81804a9f2aa90b897d)
+    * [makeを使うもの](https://github.com/ryuichiueda/pimouse_setup)
+
 * 5章: https://github.com/ryuichiueda/raspimouse_ros/
 * 6〜9章: https://github.com/ryuichiueda/pimouse_ros/
 * 10章:
