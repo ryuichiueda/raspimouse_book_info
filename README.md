@@ -12,7 +12,7 @@
 
 * 5章: https://github.com/ryuichiueda/raspimouse_ros/
 * 6〜9章: https://github.com/ryuichiueda/pimouse_ros/
-* 10章: 
+* 10章: https://github.com/ryuichiueda/pimouse_vision_control
 * 11章: https://github.com/ryuichiueda/pimouse_voice_control
 * 12章: 
 * 13章: 
