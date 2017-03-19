@@ -6,6 +6,8 @@
 
 ## 各章のコード
 
+* 2章
+    * デバイスドライバ: https://github.com/rt-net/RaspberryPiMouse
 * 4章:
     * [cronを使うもの](https://github.com/ryuichiueda/pimouse_setup/tree/cad60aa542ac45c4e685dc81804a9f2aa90b897d)
     * [makeを使うもの](https://github.com/ryuichiueda/pimouse_setup)
