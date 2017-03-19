@@ -15,8 +15,13 @@
 
 * 5章: Raspberry Pi Mouse用基本制御パッケージ（既製品）
     * https://github.com/ryuichiueda/raspimouse_ros/
-* 6〜9章: https://github.com/ryuichiueda/pimouse_ros/
-* 10章: https://github.com/ryuichiueda/pimouse_vision_control
-* 11章: https://github.com/ryuichiueda/pimouse_voice_control
-* 12章: https://github.com/ryuichiueda/pimouse_monitor
-* 13章: https://github.com/ryuichiueda/pimouse_slam
+* 6〜9章: 本の中で作るRaspberry Pi Mouse用基本制御パッケージ
+    * https://github.com/ryuichiueda/pimouse_ros/
+* 10章: カメラで顔を認識して追従
+    * https://github.com/ryuichiueda/pimouse_vision_control
+* 11章: 音声で指示を受けて移動
+    * https://github.com/ryuichiueda/pimouse_voice_control
+* 12章: ウェブブラウザで使うコントローラ
+    * https://github.com/ryuichiueda/pimouse_monitor
+* 13章: SLAM
+    * https://github.com/ryuichiueda/pimouse_slam
