@@ -1,8 +1,8 @@
-# raspimouse_book_info
+# 「Raspberry Piで学ぶ ROSロボット入門」の情報リポジトリ
 
-「Raspberry Piで学ぶ ROSロボット入門」の情報リポジトリです。
 * 本書で使用するOSイメージに関する情報: [os_images.md](./os_images.md)
 * 正誤表: [errata.md](./errata.md)
+* Facebookグループ: https://www.facebook.com/RaspberryPiMouse
 
 ## 各章のリポジトリ
 * 2章: ROSセットアップスクリプト
