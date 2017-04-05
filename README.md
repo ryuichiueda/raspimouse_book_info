@@ -2,6 +2,7 @@
 
 * 本書で使用するOSイメージに関する情報: [os_images.md](./os_images.md)
 * 正誤表: [errata.md](./errata.md)
+* FAQ: [faq.md](./faq.md)
 * Facebookグループ: https://www.facebook.com/RaspberryPiMouse
 
 ## 各章のリポジトリ
