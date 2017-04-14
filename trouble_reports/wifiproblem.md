@@ -2,7 +2,7 @@
 
 かなり攻めた構成になっているので織り込み済みといえば織り込み済みですが、最初の壁が発生しました。2017年4月14日現在、apt update, apt upgradeするとWiFiが見えなくなります。ここではラズパイマウス本向けにいくつかの対策を書いておきます。
 
-## [ubuntu.com](https://wiki.ubuntu.com/ARM/RaspberryPi) からインストールする場合
+## [ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールする場合
 
 立ち上げ後、素早く（ゆっくりやると失敗する場合もあり）
 
