@@ -30,7 +30,7 @@ linux-firmwareのアップデートをholdすれば、他のパッケージは�
 ### 手順（現在、もう一回確認中）###
 $ echo linux-firmware hold | sudo dpkg --set-selections           # もしかしたら
 $ echo linux-firmware-raspi2 hold | sudo dpkg --set-selections    # このどちらかは不要（どなたか実験を）
-$ vi /boot/firmware/config.txt
+$ sudo vi /boot/firmware/config.txt
 （2.1.6の手順でファイルを書き換え）
 $ sudo apt purge cloud-init
 $ sudo apt update
