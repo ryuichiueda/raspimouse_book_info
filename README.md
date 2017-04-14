@@ -1,8 +1,9 @@
 # 「Raspberry Piで学ぶ ROSロボット入門」の情報リポジトリ
 
-[現在、カーネルをアップデートするとWiFiが使えないという不具合を確認しています。アップデートを止めれば大丈夫です。対策はこちら。（4/13, 午前11時）](./trouble_reports/wifiproblem.md)
+現在、カーネルをアップデートするとWiFiが使えないという不具合を確認しています。
 
-[issueはこちらです。](https://github.com/ryuichiueda/raspimouse_book_info/issues/1)
+* [対処の方法](./trouble_reports/wifiproblem.md)
+* [issue](https://github.com/ryuichiueda/raspimouse_book_info/issues/1)
 
 ## 重要な情報
 
