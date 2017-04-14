@@ -18,6 +18,8 @@ $ sudo apt purge cloud-init
 * アップデートしないとセキュリティー上の脆弱性が残る場合があるので、むやみにラズパイ自身で変なものをダウンロードしたり、インターネットに直接露出させないようにします。
 * /boot/firmware/config.txtはそのままにしておきます。
 
+この後、本の内容にしたがって自身でWiFiをセットアップします。
+
 ## Ubuntu MATEを使う
 
 https://github.com/ryuichiueda/raspimouse_book_info/issues/1#issuecomment-293842720 で [ishigem](https://github.com/ishigem)さんから情報をいただきました。
