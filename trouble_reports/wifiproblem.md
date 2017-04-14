@@ -37,4 +37,7 @@ $ sudo apt update
 $ sudo apt upgrade
 ```
 
+## 4. 著者の作ったOSイメージを使う
 
+https://lab.ueda.asia/?page_id=2885　にある、「Ubuntu 16.04 Server (with a blank catkin workspace, stopped all auto updates)」の項目のOSイメージを使うと、アップデートが止まった状態（+ROSの準備済み）のイメージがインストールできます。
+ 
