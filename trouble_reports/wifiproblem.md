@@ -21,3 +21,7 @@ $ sudo apt purge cloud-init
 ## Ubuntu MATEを使う
 
 https://github.com/ryuichiueda/raspimouse_book_info/issues/1#issuecomment-293842720 で [ishigem](https://github.com/ishigem)さんから情報をいただきました。
+
+## 現在挑戦中の方法・・・
+
+linux-firmwareのアップデートをholdすればカーネルやその他パッケージはアップデートしても大丈夫なのではないかと実験中です。
