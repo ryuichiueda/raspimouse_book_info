@@ -22,7 +22,7 @@ $ sudo apt purge cloud-init
 
 https://github.com/ryuichiueda/raspimouse_book_info/issues/1#issuecomment-293842720 で [ishigem](https://github.com/ishigem)さんから情報をいただきました。
 
-## ファームウェアのアップデートを止める
+## 3. ファームウェアのアップデートを止める
 
 linux-firmwareのアップデートをholdすれば、他のパッケージはアップデートしても動作することを確認しています。[ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールした後、次の手順を踏みます。
 
