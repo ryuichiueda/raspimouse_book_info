@@ -2,7 +2,7 @@
 
 かなり攻めた構成になっているので織り込み済みといえば織り込み済みですが、最初の壁が発生しました。2017年4月14日現在、apt update, apt upgradeするとWiFiが見えなくなります。ここではラズパイマウス本向けにいくつかの対策を書いておきます。
 
-## [ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールする場合
+## 1. [ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールする場合
 
 立ち上げ後、素早く（ゆっくりやると失敗する場合もあり）
 
@@ -18,10 +18,23 @@ $ sudo apt purge cloud-init
 * アップデートしないとセキュリティー上の脆弱性が残る場合があるので、むやみにラズパイ自身で変なものをダウンロードしたり、インターネットに直接露出させないようにします。
 * /boot/firmware/config.txtはそのままにしておきます。
 
-## Ubuntu MATEを使う
+## 2. Ubuntu MATEを使う
 
 https://github.com/ryuichiueda/raspimouse_book_info/issues/1#issuecomment-293842720 で [ishigem](https://github.com/ishigem)さんから情報をいただきました。
 
-## 現在挑戦中の方法・・・
+## ファームウェアのアップデートを止める
 
-linux-firmwareのアップデートをholdすればカーネルやその他パッケージはアップデートしても大丈夫なのではないかと実験中です。
+linux-firmwareのアップデートをholdすれば、他のパッケージはアップデートしても動作することを確認しています。[ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールした後、次の手順を踏みます。
+
+```
+### 手順（現在、もう一回確認中）###
+$ echo linux-firmware hold | sudo dpkg --set-selections           # もしかしたら
+$ echo linux-firmware-raspi2 hold | sudo dpkg --set-selections    # このどちらかは不要（どなたか実験を）
+$ vi /boot/firmware/config.txt
+（2.1.6の手順でファイルを書き換え）
+$ sudo apt purge cloud-init
+$ sudo apt update
+$ sudo apt upgrade
+```
+
+
