@@ -6,7 +6,7 @@
 
 次の、1.1か1.2のどちらかを行います。
 
-### 1.1 自動アップデートを止める方法
+### 1.1: 自動アップデートを止める方法
 
 立ち上げ後、素早く（ゆっくりやると失敗する場合もあり）
 
@@ -22,7 +22,7 @@ $ sudo apt purge cloud-init
 * アップデートしないとセキュリティー上の脆弱性が残る場合があるので、むやみにラズパイ自身で変なものをダウンロードしたり、インターネットに直接露出させないようにします。
 * /boot/firmware/config.txtはそのままにしておきます。
 
-### 1.2 ファームウェアのアップデートだけ止める方法
+### 1.2: ファームウェアのアップデートだけ止める方法
 
 linux-firmwareのアップデートをholdすれば、他のパッケージはアップデートしても動作することを確認しています。[ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールした後、次の手順を踏みます。
 
@@ -38,7 +38,7 @@ $ sudo apt upgrade
 ```
 
 
-### 1.3 1.2を自動で行う
+### 1.3: 1.2を自動で行う
 
 OSインストール後にログインして、
 https://raw.githubusercontent.com/ryuichiueda/raspimouse_book_ubuntu_init/master/after_os_install.bash
