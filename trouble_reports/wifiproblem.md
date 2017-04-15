@@ -4,7 +4,9 @@
 
 ## 1. [ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールする場合
 
-### 1.1. 自動アップデートを止める
+次の、1.1か1.2のどちらかを行います。
+
+### 1.1 自動アップデートを止める方法
 
 立ち上げ後、素早く（ゆっくりやると失敗する場合もあり）
 
@@ -20,7 +22,7 @@ $ sudo apt purge cloud-init
 * アップデートしないとセキュリティー上の脆弱性が残る場合があるので、むやみにラズパイ自身で変なものをダウンロードしたり、インターネットに直接露出させないようにします。
 * /boot/firmware/config.txtはそのままにしておきます。
 
-### 1.2. ファームウェアのアップデートだけ止める
+### 1.2 ファームウェアのアップデートだけ止める方法
 
 linux-firmwareのアップデートをholdすれば、他のパッケージはアップデートしても動作することを確認しています。[ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールした後、次の手順を踏みます。
 
@@ -41,5 +43,5 @@ https://github.com/ryuichiueda/raspimouse_book_info/issues/1#issuecomment-293842
 
 ## 3. 著者の作ったOSイメージを使う
 
-https://lab.ueda.asia/?page_id=2885 にある、「Ubuntu 16.04 Server (with a blank catkin workspace, stopped all auto updates)」の項目のOSイメージを使うと、アップデートが止まった状態（+ROSの準備済み）のイメージがインストールできます。アップデートが止まるので、1と同じ注意事項が適用されます。
+https://lab.ueda.asia/?page_id=2885 にある、「Ubuntu 16.04 Server (with a blank catkin workspace, stopped all auto updates)」の項目のOSイメージを使うと、アップデートが止まった状態（+ROSの準備済み）のイメージがインストールできます。アップデートが止まるので、1.1と同じ注意事項が適用されます。
  
