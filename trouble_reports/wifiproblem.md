@@ -1,6 +1,6 @@
 # UbuntuをアップデートするとWiFiが使えなくなる問題について（2017年4月13日）
 
-かなり攻めた構成になっているので織り込み済みといえば織り込み済みですが、最初の壁が発生しました。2017年4月14日現在、apt update, apt upgradeするとWiFiが見えなくなります。ここではラズパイマウス本向けにいくつかの対策を書いておきます。個人的には1.2に挑戦してもらいたいです。
+かなり攻めた構成になっているので織り込み済みといえば織り込み済みですが、最初の壁が発生しました。2017年4月14日現在、apt update, apt upgradeするとWiFiが見えなくなります。ここではラズパイマウス本向けにいくつかの対策を書いておきます。1.3が一番簡単です。個人的には1.2に挑戦してもらいたいです。
 
 ## 1. [ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールする場合
 
@@ -36,6 +36,18 @@ $ sudo apt purge cloud-init
 $ sudo apt update
 $ sudo apt upgrade
 ```
+
+
+### 1.3 1.2を自動で行う
+
+OSインストール後にログインして、
+https://raw.githubusercontent.com/ryuichiueda/raspimouse_book_ubuntu_init/master/after_os_install.bash
+の内容をファイルにコピーして、 
+```
+$chmod +x ファイル名
+$ ./ファイル名
+```
+と打つと、1.2の内容が自動で完了します。
 
 ## 2. Ubuntu MATEを使う
 
