@@ -1,8 +1,10 @@
 # UbuntuをアップデートするとWiFiが使えなくなる問題について（2017年4月13日）
 
-かなり攻めた構成になっているので織り込み済みといえば織り込み済みですが、最初の壁が発生しました。2017年4月14日現在、apt update, apt upgradeするとWiFiが見えなくなります。ここではラズパイマウス本向けにいくつかの対策を書いておきます。個人的には3に挑戦してもらいたいです。
+かなり攻めた構成になっているので織り込み済みといえば織り込み済みですが、最初の壁が発生しました。2017年4月14日現在、apt update, apt upgradeするとWiFiが見えなくなります。ここではラズパイマウス本向けにいくつかの対策を書いておきます。個人的には1.2に挑戦してもらいたいです。
 
-## 1. [ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールして、自動アップデートを止める
+## 1. [ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールする場合
+
+### 1.1. 自動アップデートを止める
 
 立ち上げ後、素早く（ゆっくりやると失敗する場合もあり）
 
@@ -18,11 +20,7 @@ $ sudo apt purge cloud-init
 * アップデートしないとセキュリティー上の脆弱性が残る場合があるので、むやみにラズパイ自身で変なものをダウンロードしたり、インターネットに直接露出させないようにします。
 * /boot/firmware/config.txtはそのままにしておきます。
 
-## 2. Ubuntu MATEを使う
-
-https://github.com/ryuichiueda/raspimouse_book_info/issues/1#issuecomment-293842720 で [ishigem](https://github.com/ishigem)さんから情報をいただきました。
-
-## 3. [ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールして、ファームウェアのアップデートだけ止める
+### 1.2. ファームウェアのアップデートだけ止める
 
 linux-firmwareのアップデートをholdすれば、他のパッケージはアップデートしても動作することを確認しています。[ubuntu.comのイメージ](https://wiki.ubuntu.com/ARM/RaspberryPi) を使ってインストールした後、次の手順を踏みます。
 
@@ -37,7 +35,11 @@ $ sudo apt update
 $ sudo apt upgrade
 ```
 
-## 4. 著者の作ったOSイメージを使う
+## 2. Ubuntu MATEを使う
+
+https://github.com/ryuichiueda/raspimouse_book_info/issues/1#issuecomment-293842720 で [ishigem](https://github.com/ishigem)さんから情報をいただきました。
+
+## 3. 著者の作ったOSイメージを使う
 
 https://lab.ueda.asia/?page_id=2885 にある、「Ubuntu 16.04 Server (with a blank catkin workspace, stopped all auto updates)」の項目のOSイメージを使うと、アップデートが止まった状態（+ROSの準備済み）のイメージがインストールできます。アップデートが止まるので、1と同じ注意事項が適用されます。
  
