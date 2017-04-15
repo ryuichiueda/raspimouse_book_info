@@ -9,6 +9,7 @@
 
 ## その他の情報
 
+* システムの設定シェルスクリプト集: [ryuichiueda/raspimouse_book_ubuntu_init](https://github.com/ryuichiueda/raspimouse_book_ubuntu_init)
 * 本書で使用するOSイメージに関する情報: [os_images.md](./os_images.md)
 * 正誤表: [errata.md](./errata.md)
 * FAQ: [faq.md](./faq.md)
