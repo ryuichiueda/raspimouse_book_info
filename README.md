@@ -26,8 +26,12 @@
 
 * 5章: Raspberry Pi Mouse用基本制御パッケージ（既製品）
     * https://github.com/ryuichiueda/raspimouse_ros/
-* 6〜9章: 本の中で作るRaspberry Pi Mouse用基本制御パッケージ
+* 6〜8章: 本の中で作るRaspberry Pi Mouse用基本制御パッケージ
     * https://github.com/ryuichiueda/pimouse_ros/
+    
+* 9章: Raspberry Pi Mouseを廊下で走らせるコード
+   * https://github.com/ryuichiueda/pimouse_run_corridor
+
 * 10章: カメラで顔を認識して追従
     * https://github.com/ryuichiueda/pimouse_vision_control
 * 11章: 音声で指示を受けて移動
