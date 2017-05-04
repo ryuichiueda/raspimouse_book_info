@@ -2,6 +2,9 @@
 
 ## ROSインストール済みOSイメージ
 
+* 自動アップデートを止めたRaspberry Pi 3用 Ubuntu 16.04 Server: [ダウンロード(1.5GB)](https://lab.ueda.asia/misc/ubuntu-16.04-preinstalled-server-armhf+raspi3-ros-noupgrade-rtmouse-catkin.img.xz)
+
+
 * バグ除去済みのRaspberry Pi 3用 Ubuntu 16.04 Server: [ダウンロード(1.1GB)](https://lab.ueda.asia/misc/ubuntu-16.04-preinstalled-server-armhf+raspi3-upgradable.img.xz)
 * Part1が終わった直後のイメージ（catkin_ws作成済み）: [ダウンロード(2.0GB)](https://lab.ueda.asia/misc/ubuntu-16.04-raspimouse-ros-book-part1+catkin_ws.img.xz)
 * Part2が終わった直後のイメージ: [ダウンロード(2.0GB)](https://lab.ueda.asia/misc/ubuntu-16.04-raspimouse-ros-book-part2.img.xz)
