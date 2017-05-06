@@ -2,8 +2,8 @@
 
 2017年4月13日にapt update, apt upgradeするとWi-Fiが見えなくなるという不具合の報告がありましたが、以下の方法で対処できます。
 
-* 1. 1.2節の内容に従ってOSをアップデートする（iwconfigでwlan0が見えなくなる）
-* 1. 以下を実行（iwconfigで再度wlan0が見えるようになる）
+1. 1.2節の内容に従ってOSをアップデートする（iwconfigでwlan0が見えなくなる）
+1. 以下を実行（iwconfigで再度wlan0が見えるようになる）
 
 ```
 $ cd /lib/firmware/brcm/
