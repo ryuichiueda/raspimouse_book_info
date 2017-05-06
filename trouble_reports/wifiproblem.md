@@ -15,4 +15,4 @@ $ sudo reboot
 
 # contributer
 
-* https://github.com/FurqanHabibi
+* FurqanHabibi: https://github.com/FurqanHabibi
