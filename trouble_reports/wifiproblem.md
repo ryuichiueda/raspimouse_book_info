@@ -16,3 +16,7 @@ $ sudo reboot
 # contributer
 
 * FurqanHabibi: https://github.com/FurqanHabibi
+
+# 過去の解決法
+
+* [2017/4/13](https://github.com/ryuichiueda/raspimouse_book_info/blob/master/trouble_reports/20170413_wifiproblem.md)
