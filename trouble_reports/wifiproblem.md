@@ -6,9 +6,10 @@
 * 1. 以下を実行（iwconfigで再度wlan0が見えるようになる）
 
 ```
-cd /lib/firmware/brcm/
-sudo wget https://github.com/RPi-Distro/firmware-nonfree/raw/master/brcm80211/brcm/brcmfmac43430-sdio.bin -O brcmfmac43430-sdio.bin
-sudo wget https://github.com/RPi-Distro/firmware-nonfree/raw/master/brcm80211/brcm/brcmfmac43430-sdio.txt -O brcmfmac43430-sdio.txt
+$ cd /lib/firmware/brcm/
+$ sudo wget https://github.com/RPi-Distro/firmware-nonfree/raw/master/brcm80211/brcm/brcmfmac43430-sdio.bin -O brcmfmac43430-sdio.bin
+$ sudo wget https://github.com/RPi-Distro/firmware-nonfree/raw/master/brcm80211/brcm/brcmfmac43430-sdio.txt -O brcmfmac43430-sdio.txt
+$ sudo reboot
 ```
 
 
