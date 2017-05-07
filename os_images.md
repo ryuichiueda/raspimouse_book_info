@@ -2,20 +2,20 @@
 
 ## ROSインストール済みOSイメージ
 
-* 自動アップデートを止めたRaspberry Pi 3用 Ubuntu 16.04 Server（これが一番機器との相性が良いのですが、くれぐれもインターネット上に露出の内容お願いいたします。）: [ダウンロード(1.5GB)](https://lab.ueda.asia/misc/ubuntu-16.04-preinstalled-server-armhf+raspi3-ros-noupgrade-rtmouse-catkin.img.xz)
+* 自動アップデートを止めたRaspberry Pi 3用 Ubuntu 16.04 Server（これが一番機器との相性が良いのですが、くれぐれもインターネット上に露出の内容お願いいたします。）: [ダウンロード(1.5GB)](http://file.ueda.asia/RPIM_BOOK/ubuntu-16.04-preinstalled-server-armhf+raspi3-ros-noupgrade-rtmouse-catkin.img.xz)
 
 
-* バグ除去済みのRaspberry Pi 3用 Ubuntu 16.04 Server: [ダウンロード(1.1GB)](https://lab.ueda.asia/misc/ubuntu-16.04-preinstalled-server-armhf+raspi3-upgradable.img.xz)
-* Part1が終わった直後のイメージ（catkin_ws作成済み）: [ダウンロード(2.0GB)](https://lab.ueda.asia/misc/ubuntu-16.04-raspimouse-ros-book-part1+catkin_ws.img.xz)
-* Part2が終わった直後のイメージ: [ダウンロード(2.0GB)](https://lab.ueda.asia/misc/ubuntu-16.04-raspimouse-ros-book-part2.img.xz)
-* Part3が終わった直後のイメージ: [ダウンロード(2.1GB)](https://lab.ueda.asia/misc/ubuntu-16.04-raspimouse-ros-book-part3.img.xz)
+* バグ除去済みのRaspberry Pi 3用 Ubuntu 16.04 Server: [ダウンロード(1.1GB)](http://file.ueda.asia/RPIM_BOOK/ubuntu-16.04-preinstalled-server-armhf+raspi3-upgradable.img.xz)
+* Part1が終わった直後のイメージ（catkin_ws作成済み）: [ダウンロード(2.0GB)](http://file.ueda.asia/RPIM_BOOK/ubuntu-16.04-raspimouse-ros-book-part1+catkin_ws.img.xz)
+* Part2が終わった直後のイメージ: [ダウンロード(2.0GB)](http://file.ueda.asia/RPIM_BOOK/ubuntu-16.04-raspimouse-ros-book-part2.img.xz)
+* Part3が終わった直後のイメージ: [ダウンロード(2.1GB)](http://file.ueda.asia/RPIM_BOOK/ubuntu-16.04-raspimouse-ros-book-part3.img.xz)
 
 
 * 諸注意
     * GPLでの配布です
     * 8GBのmicroSDで作りましたので16GBのmicroSDで使う場合、そのまま使うかパーティションを拡張して使います。
 
-* その他の情報: https://lab.ueda.asia/?page_id=2885
+* その他の情報: https://lab.ueda.tech/?page_id=2885
 
 ## Pi3 + Ubuntu 16.04 Serverでアップグレードしてもクラッシュしない方法
 
