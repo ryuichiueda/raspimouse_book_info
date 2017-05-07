@@ -2,6 +2,8 @@
 
 ## ROSインストール済みOSイメージ
 
+### Ubuntu 16.04 Server
+
 * 自動アップデートを止めたRaspberry Pi 3用 Ubuntu 16.04 Server（これが一番機器との相性が良いのですが、くれぐれもインターネット上に露出の内容お願いいたします。）: [ダウンロード(1.5GB)](http://file.ueda.tech/RPIM_BOOK/ubuntu-16.04-preinstalled-server-armhf+raspi3-ros-noupgrade-rtmouse-catkin.img.xz)
 
 
@@ -14,8 +16,13 @@
 * 諸注意
     * GPLでの配布です
     * 8GBのmicroSDで作りましたので16GBのmicroSDで使う場合、そのまま使うかパーティションを拡張して使います。
+    
+    
+### Ubuntu MATEのOSイメージ
 
-* その他の情報: https://lab.ueda.tech/?page_id=2885
+ラズパイで使いやすいようにしたものがこちらにあります。
+
+https://tiryoh.com/blog/archives/1101
 
 ## Pi3 + Ubuntu 16.04 Serverでアップグレードしてもクラッシュしない方法
 
@@ -59,10 +66,14 @@ ubuntu@ubuntu:~$ uname -r
 ```
 というようにカーネルがアップデートされます。
 
+### その後の手続き
 
-## Ubuntu MATEのOSイメージ
+ファームウェアが最新だとWi-Fiが認識されないため、次の処理を行います。
 
-ラズパイで使いやすいようにしたものがこちらにあります。
-
-https://tiryoh.com/blog/archives/1101
+```
+$ cd /lib/firmware/brcm/
+$ sudo wget https://github.com/RPi-Distro/firmware-nonfree/raw/master/brcm80211/brcm/brcmfmac43430-sdio.bin -O brcmfmac43430-sdio.bin
+$ sudo wget https://github.com/RPi-Distro/firmware-nonfree/raw/master/brcm80211/brcm/brcmfmac43430-sdio.txt -O brcmfmac43430-sdio.txt
+$ sudo reboot
+```
 
