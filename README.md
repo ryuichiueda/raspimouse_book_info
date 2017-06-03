@@ -40,3 +40,9 @@
     * https://github.com/ryuichiueda/pimouse_monitor
 * 13章: SLAM
     * https://github.com/ryuichiueda/pimouse_slam
+    
+    
+## 便利ツール
+
+* ゲームコントローラでロボットを操作するためのパッケージ
+    * https://github.com/zaki0929/raspimouse_game_controller
