@@ -2,7 +2,11 @@
 
 ## 重要な情報
 
-現在、カーネルをアップデートするとWiFiが使えないという不具合を確認しています。
+デバイスドライバにバグがありました。まだマスタにはマージしていませんが、カーネルパニックが頻発している場合はこちらのブランチを試してみてください。
+
+* [最新のブランチ（未検証）](https://github.com/rt-net/RaspberryPiMouse/tree/fix)
+
+カーネルをアップデートするとWiFiが使えないという不具合を確認しています。
 
 * [対処の方法](./trouble_reports/wifiproblem.md)
 * [issue](https://github.com/ryuichiueda/raspimouse_book_info/issues/1)
