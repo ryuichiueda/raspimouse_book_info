@@ -2,6 +2,10 @@
 
 ## 重要な情報
 
+10章でOpenCVにエラーが出ます（2017/12/18）
+
+* ファイルが読めないのが原因のようで調査中です。
+
 12章で使うJavaScriptへのコードがリンク切れ状態になっています。（2017/12/8）
 
 * 詳細: https://github.com/ryuichiueda/raspimouse_book_info/issues/11
