@@ -2,7 +2,15 @@
 
 ## 重要な情報
 
-10章において、xmlファイルが指定したパスにないことが原因で、OpenCVにエラーが出ることがあります。（2017/12/18）
+### 2018/4/22
+
+執筆当時のシミュレータ（E章）の状況が残っていなかったので、とりあえずその当時のもののブランチを作っていただきました。
+
+* https://github.com/rt-net/raspimouse_sim/tree/rpim_book_version
+
+### 2017/12/18
+
+10章において、xmlファイルが指定したパスにないことが原因で、OpenCVにエラーが出ることがあります。
 
 * 対処法
 
@@ -12,7 +20,9 @@
 $ sudo apt install opencv-data
 ```
 
-12章で使うJavaScriptへのコードがリンク切れ状態になっています。（2017/12/8）
+### 2017/12/8
+
+12章で使うJavaScriptへのコードがリンク切れ状態になっています。
 
 * 詳細: https://github.com/ryuichiueda/raspimouse_book_info/issues/11
 
