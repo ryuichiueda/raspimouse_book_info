@@ -4,9 +4,10 @@
 
 ### 2018/4/22
 
-執筆当時のシミュレータ（E章）の状況が残っていなかったので、とりあえずその当時のもののブランチを作っていただきました。
+執筆当時のシミュレータ（E章）の状況が残っていなかったので、その当時のもののブランチを作っていただきました。
 
-* https://github.com/rt-net/raspimouse_sim/tree/rpim_book_version
+* 本体: https://github.com/rt-net/raspimouse_sim/tree/rpim_book_version
+* インストーラ: https://github.com/ryuichiueda/raspimouse_sim_installer/tree/rpim_book_version
 
 ### 2017/12/18
 
