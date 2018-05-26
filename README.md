@@ -31,6 +31,8 @@ $ sudo apt install opencv-data
 
 * [最新のブランチ](https://github.com/rt-net/RaspberryPiMouse)
 
+### 2017/5/6
+
 カーネルをアップデートするとWiFiが使えないという不具合を確認しています。
 
 * [対処の方法](./trouble_reports/wifiproblem.md)
