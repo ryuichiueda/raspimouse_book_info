@@ -13,7 +13,7 @@ $ sudo reboot
 ```
 
 
-# contributer
+# contributor
 
 * FurqanHabibi: https://github.com/FurqanHabibi
 
