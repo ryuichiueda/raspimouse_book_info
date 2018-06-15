@@ -2,6 +2,11 @@
 
 ## 重要な情報
 
+### 2018/6/15
+
+https://wiki.ubuntu.com/ARM/RaspberryPi#Wifi_firmware にある手順でWiFiの動くファームウェアがインストールできることを確認しました。-> 
+
+
 ### 2018/6/11
 
 最新のROSをインストールして `catkin_create_pkg` を使うと、`package.xml` のフォーマットがバージョン2になります。このバージョンでは `run_depend` が `exec_depend` に変更になっていますので、バージョン2を使うときは書籍中の `run_depend` を `exec_depend` に読み替えてください。元のバージョンを使いたい時には、XML上部にある `format="2"`を消します。ただ、新しいほうを覚えた方が良いでしょう。
