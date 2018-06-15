@@ -4,7 +4,7 @@
 
 ### 2018/6/15
 
-https://wiki.ubuntu.com/ARM/RaspberryPi#Wifi_firmware にある手順でWiFiの動くファームウェアがインストールできることを確認しました。-> 
+https://wiki.ubuntu.com/ARM/RaspberryPi#Wifi_firmware にある手順でWiFiの動くファームウェアがインストールできることを確認しました。-> [wifiproblem.md](https://github.com/ryuichiueda/raspimouse_book_info/blob/master/trouble_reports/wifiproblem.md)
 
 
 ### 2018/6/11
