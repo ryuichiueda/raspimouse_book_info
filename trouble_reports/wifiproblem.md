@@ -6,6 +6,7 @@
 1. 以下を実行（iwconfigで再度wlan0が見えるようになる）
 
 ```
+cd
 mkdir wifi-firmware
 cd wifi-firmware
 wget https://github.com/RPi-Distro/firmware-nonfree/raw/master/brcm/brcmfmac43430-sdio.bin
