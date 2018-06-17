@@ -1,5 +1,7 @@
 # 「Raspberry Piで学ぶ ROSロボット入門」の情報リポジトリ
 
+* インストールが面倒臭い人のためのOSイメージ: https://b.ueda.tech/?post=20180617_raspi_ubuntu
+
 ## 重要な情報
 
 ### 2018/6/15
