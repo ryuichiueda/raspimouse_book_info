@@ -4,23 +4,7 @@
 
 ## 重要な情報
 
-### 2018/8/9
 
-Travis CIでpipを使うときsudoが必要になりました。
-
-```
-$ head travis_ros_install.bash 
-#!/bin/bash -xve
-
-#required packages
-sudo pip install catkin_pkg       ###add sudo!!!###
-sudo pip install empy             ###add sudo!!!###
-sudo pip install pyyaml           ###add sudo!!!###
-sudo pip install rospkg           ###add sudo!!!###
-
-#ros install
-cd ..
-```
 
 ### 2018/6/15
 
