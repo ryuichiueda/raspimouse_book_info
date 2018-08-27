@@ -1,6 +1,7 @@
 # 「Raspberry Piで学ぶ ROSロボット入門」の情報リポジトリ
 
 * インストールが面倒臭い人のためのOSイメージ: https://b.ueda.tech/?post=20180617_raspi_ubuntu
+* Raspberry Pi 3 B+を使いたい方: https://b.ueda.tech/?post=20180827_raspimouse
 
 ## 重要な情報
 
