@@ -1,103 +1,102 @@
-# 「Raspberry Piで学ぶ ROSロボット入門」の情報リポジトリ
+# The information repository of "Learning ROS Robot Programming with Raspberry Pi"
 
-* インストールが面倒臭い人のためのOSイメージ: https://b.ueda.tech/?post=20180617_raspi_ubuntu
-* Raspberry Pi 3 B+を使いたい方: https://b.ueda.tech/?post=20180827_raspimouse
+* For people who are lazy of installing the OS image: https://b.ueda.tech/?post=20180617_raspi_ubuntu
+* For people who would like to use Raspberry Pi 3 B+: https://b.ueda.tech/?post=20180827_raspimouse
 
-## 重要な情報
+## Important Information 
 
 ### 2018/11/20
 
-テストについて一点、確証のない補足があります。大抵は大丈夫なので見落としていたのですが、テストコードでダミーのデバイスに字を書き込んだら、すぐに`f.flush()`しないと、ファイルへの書き込みが遅延して、たまにテストがコケるような気がしてきました。
+There is one unconfirmed supplement about the test. It is usually fine but unless you immediately execute `f. flush()` when writting a word into the dummy device with the test code, there will be delays in file inputs, which leads to the tests being mocky.
 
 ### 2018/6/15
 
-https://wiki.ubuntu.com/ARM/RaspberryPi#Wifi にある手順でWiFiの動くファームウェアがインストールできることを確認しました。-> [wifiproblem.md](https://github.com/ryuichiueda/raspimouse_book_info/blob/master/trouble_reports/wifiproblem.md)
+By following the procedures listed here https://wiki.ubuntu.com/ARM/RaspberryPi#Wifi we have confirmed that one can install a firmware where the WiFi is enabled. -> [wifiproblem.md](https://github.com/ryuichiueda/raspimouse_book_info/blob/master/trouble_reports/wifiproblem.md)
 
 
 ### 2018/6/11
 
-最新のROSをインストールして `catkin_create_pkg` を使うと、`package.xml` のフォーマットがバージョン2になります。このバージョンでは `run_depend` が `exec_depend` に変更になっていますので、バージョン2を使うときは書籍中の `run_depend` を `exec_depend` に読み替えてください。元のバージョンを使いたい時には、XML上部にある `format="2"`を消します。ただ、新しいほうを覚えた方が良いでしょう。
+When installing the newest ROS and executing `catkin_create_pkg`, the format of `package.xml` is generated as version 2. Since in this version `run_depend` is replaced by `exec_depend`, you will need to replace the `run_depend` to `exec_depend` written in the text. If you would like to use the old version, delete the line `format="2"` written in the top of the XML. Although, it will be better to learn the new version. 
 
 
 ### 2018/5/26
 
-ちょっと気づいてなかったのですが、WiFiが2017/5/6の方法では動作しないことに気づきました。調査中です。とりあえず解決までは、次のようにおねがいします。
+We have just noticed this but the WiFi does not work with the method shown in 2017/05/06. It is under investigation and in the mean time please do as follows.
 
-* 今、インストールが済んでWiFiが使えている場合はapt upgradeしない。
-* これからインストールするときは、[この](https://b.ueda.tech/?post=20171223_raspi_ubuntu_image)イメージを利用
+* If you have already installed it and the WiFi works, do NOT `apt upgrade`.
+* If you are about to install, use the image [here](https://b.ueda.tech/?post=20171223_raspi_ubuntu_image).
 
 ### 2018/4/22
 
-執筆当時のシミュレータ（E章）の状況が残っていなかったので、その当時のもののブランチを作っていただきました。
+There wasn't a log of the simulator (Chapter E) at the time of writing, so we have made a branch of it.
 
-* 本体: https://github.com/rt-net/raspimouse_sim/tree/rpim_book_version
-* インストーラ: https://github.com/ryuichiueda/raspimouse_sim_installer/tree/rpim_book_version
+* Simulator: https://github.com/rt-net/raspimouse_sim/tree/rpim_book_version
+* Installer: https://github.com/ryuichiueda/raspimouse_sim_installer/tree/rpim_book_version
 
 ### 2017/12/18
 
-10章において、xmlファイルが指定したパスにないことが原因で、OpenCVにエラーが出ることがあります。
+In chapter 10, because there was no xml file in the specified path, an error will occur in OpenCV.
 
-* 対処法
+* How to handle
 
-以下のコマンドを実行お願いします。
-
+Execute the following commands.
 ```
 $ sudo apt install opencv-data
 ```
 
 ### 2017/12/8
 
-12章で使うJavaScriptへのコードがリンク切れ状態になっています。
+The link is broken for the JavaScript codes used in chapter 12.
 
-* 詳細: https://github.com/ryuichiueda/raspimouse_book_info/issues/11
+* Details: https://github.com/ryuichiueda/raspimouse_book_info/issues/11
 
-デバイスドライバにバグがありましたので修正しました。（2017/7/7）
+We modified the bug in the device driver. (2017/07/07)
 
-* [最新のブランチ](https://github.com/rt-net/RaspberryPiMouse)
+* [The newest branch](https://github.com/rt-net/RaspberryPiMouse)
 
 ### 2017/5/6
 
-カーネルをアップデートするとWiFiが使えないという不具合を確認しています。
+We have confirmed a defect where you can't use the WiFi after updating the kernel.
 
-* [対処の方法](./trouble_reports/wifiproblem.md)
-* [issue](https://github.com/ryuichiueda/raspimouse_book_info/issues/1)
+* [Troubleshooting](./trouble_reports/wifiproblem.md)
+* [Issue](https://github.com/ryuichiueda/raspimouse_book_info/issues/1)
 
-## その他の情報
+## Other information
 
-* システムの設定シェルスクリプト集: [ryuichiueda/raspimouse_book_ubuntu_init](https://github.com/ryuichiueda/raspimouse_book_ubuntu_init)
-* 本書で使用するOSイメージに関する情報: [os_images.md](./os_images.md)
-* 正誤表: [errata.md](./errata.md)
+* A collection of shell scripts for setting the system: [ryuichiueda/raspimouse_book_ubuntu_init](https://github.com/ryuichiueda/raspimouse_book_ubuntu_init)
+* Information about the OS image used in the text: [os_images.md](./os_images.md)
+* A list of errata: [errata.md](./errata.md)
 * FAQ: [faq.md](./faq.md)
-* Facebookグループ: https://www.facebook.com/RaspberryPiMouse
+* Facebook Group: https://www.facebook.com/RaspberryPiMouse
 
-## 各章のリポジトリ
-* 2章: ROSセットアップスクリプト
+## Repository of each chapters
+* Ch. 2: Script for setting up ROS
     * https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu16.04_server
-* 3章: デバイスドライバ
+* Ch. 3: Device Driver
     * https://github.com/rt-net/RaspberryPiMouse
-* 4章:
-    * [cronを使うもの](https://github.com/ryuichiueda/pimouse_setup/tree/cad60aa542ac45c4e685dc81804a9f2aa90b897d)
-    * [makeを使うもの](https://github.com/ryuichiueda/pimouse_setup)
+* Ch. 4:
+    * [Using cron](https://github.com/ryuichiueda/pimouse_setup/tree/cad60aa542ac45c4e685dc81804a9f2aa90b897d)
+    * [Using make](https://github.com/ryuichiueda/pimouse_setup)
 
-* 5章: Raspberry Pi Mouse用基本制御パッケージ（既製品）
+* Ch. 5: Basic control package for Raspberry Pi Mouse (Commercial item)
     * https://github.com/ryuichiueda/raspimouse_ros/
-* 6〜8章: 本の中で作るRaspberry Pi Mouse用基本制御パッケージ
+* Ch. 6 to 8: The basic control package for Raspberry Pi Mouse used in the text.
     * https://github.com/ryuichiueda/pimouse_ros/
     
-* 9章: Raspberry Pi Mouseを廊下で走らせるコード
+* Ch. 9: The code for running the Raspberry Pi Mouse in the hallway.
    * https://github.com/ryuichiueda/pimouse_run_corridor
 
-* 10章: カメラで顔を認識して追従
+* Ch. 10: Recognizing the face via camera and following it.
     * https://github.com/ryuichiueda/pimouse_vision_control
-* 11章: 音声で指示を受けて移動
+* Ch. 11: Controlling the robot by voice.
     * https://github.com/ryuichiueda/pimouse_voice_control
-* 12章: ウェブブラウザで使うコントローラ
+* Ch. 12: Controlling the robot through a web browser.
     * https://github.com/ryuichiueda/pimouse_monitor
-* 13章: SLAM
+* Ch. 13: SLAM
     * https://github.com/ryuichiueda/pimouse_slam
     
     
-## 便利ツール
+## Convenient Tools
 
-* ゲームコントローラでロボットを操作するためのパッケージ
+* A package for controlling the robot with a game controller.
     * https://github.com/zaki0929/raspimouse_game_controller
