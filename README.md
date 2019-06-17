@@ -5,6 +5,18 @@
 
 ## 重要な情報
 
+### 2019/6/17
+
+ROSをインストールしたりアップデートしたりするときに、GPGキーのアップデートが必要になりました。
+
+```
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+```
+
+を実行してください。
+
+* 参考: https://discourse.ros.org/t/new-gpg-keys-deployed-for-packages-ros-org/9454
+
 ### 2018/11/20
 
 テストについて一点、確証のない補足があります。大抵は大丈夫なので見落としていたのですが、テストコードでダミーのデバイスに字を書き込んだら、すぐに`f.flush()`しないと、ファイルへの書き込みが遅延して、たまにテストがコケるような気がしてきました。
