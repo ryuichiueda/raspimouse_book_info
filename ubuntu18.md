@@ -41,3 +41,26 @@
     $ sudo reboot
     （再起動時にピッと言ったらOK）
     ```
+
+
+## 主な変更
+
+### ネットワーク設定
+
+ネットワークの設定がNetplanというものになりました。`/etc/network/interfaces`を編集しても何も起こらないのでご注意を。
+
+* 参考: https://qiita.com/Aton-kish/items/e06d87626b21e21c1e33
+
+### gmapping
+
+まだ`apt`で入るパッケージがないので、自身でコンパイルします。
+
+* 手順の例: https://www.robotech-note.com/entry/2018/12/16/ROS_melodic%28Ubuntu18_04%29%E3%81%A7map_server%2Cgmapping%2Cnavigation%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%99%E3%82%8B
+
+この時、メモリ不足を防ぐために、`make`で使うプロセスの数を1つにします。具体的には、
+
+```
+$ catkin_make -j1
+```
+
+と`catkin_make`の際に指定します。
