@@ -1,6 +1,10 @@
 # Ubuntu 18.04情報
 
-## インストール
+## ROS、デバイスドライバインストール済みイメージ
+
+* https://b.ueda.tech/?post=20190618_raspimouse
+
+## インストール方法
 
 1. https://wiki.ubuntu.com/ARM/RaspberryPi から、「Raspberry Pi 3B/3B+: ubuntu-18.04.2-preinstalled-server-armhf+raspi3.img.xz」をダウンロード。
 1. microSDに`dd`でコピー
