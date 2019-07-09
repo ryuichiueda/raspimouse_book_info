@@ -35,7 +35,7 @@
     $ ./build_install.bash
     ```
 
-1. https://github.com/ryuichiueda/pimouse_setup で起動時にデバイスドライバがインストールされるようにするjf
+1. https://github.com/ryuichiueda/pimouse_setup で起動時にデバイスドライバがインストールされるようにする
     * crontabを使わないといけないようです
 
     ```
@@ -46,6 +46,18 @@
     （再起動時にピッと言ったらOK）
     ```
 
+1. power managementを切る
+    * 無線の設定をしてから、次のようにcronにpower managementを切る設定を追加します。
+    
+
+    ```
+    $ sudo apt install wireless-utils
+    $ sudo crontab -e 
+    ...（次の1行を追加）...
+    @reboot /sbin/iwconfig wlan0 power off
+    $ sudo reboot
+    （再起動時にピッと言ったらOK）
+    ```
 
 ## 16.04->18.04での主な変更
 
