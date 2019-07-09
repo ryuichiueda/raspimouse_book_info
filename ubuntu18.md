@@ -56,7 +56,10 @@
     ...（次の1行を追加）...
     @reboot /sbin/iwconfig wlan0 power off
     $ sudo reboot
-    （再起動時にピッと言ったらOK）
+   $ iwconfig 
+   ....
+   wlan0     ...
+             Power Management:off
     ```
 
 ## 16.04->18.04での主な変更
