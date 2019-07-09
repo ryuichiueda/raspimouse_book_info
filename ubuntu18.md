@@ -51,7 +51,7 @@
     
 
     ```
-    $ sudo apt install wireless-utils
+    $ sudo apt install wireless-tools
     $ sudo crontab -e 
     ...（次の1行を追加）...
     @reboot /sbin/iwconfig wlan0 power off
