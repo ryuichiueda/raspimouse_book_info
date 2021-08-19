@@ -1,6 +1,9 @@
 # 「Raspberry Piで学ぶ ROSロボット入門」の情報リポジトリ
 
-* ラズパイマウスのラズパイ4へ対応状況については[アールティさんのこのページ](https://www.rt-shop.jp/blog/archives/11602)をご覧ください。既存のラズパイマウスのためのコネクタが発売されています。
+* 株式会社アールティにて公開しているラズパイマウス関連情報
+    * [ラズパイマウスについて](https://rt-net.github.io/tutorials/raspimouse/products.html)
+    * [ラズパイマウスのRaspberry Pi 4対応について](https://www.rt-shop.jp/blog/archives/11602#toc3)
+    * [Ubuntu 20.04を使う場合のラズパイマウスセットアップ手順](https://rt-net.github.io/tutorials/raspimouse/driver/install.html)
 
 ## 重要な情報
 
